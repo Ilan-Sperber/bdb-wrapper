@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A better BDB</title>
+</head>
+<body>
+  <form onsubmit="submit()">
+    <input type="text" />
+  </form>
+  <p></p>
+
+  <script type="text/javascript">
+    const bdb = fetch('.\\bdb.json').then(r => r.json());
+
+    async function submit(e) {
+      e.preventDefault();
+      document.querySelector('p').innerHTML = await translate(document.querySelector('input').value);
+    }
+
+    async function translate(word) {
+      
+
+    }
+  </script>
+</body>
+</html>
